@@ -1,0 +1,38 @@
+/* Style Tags */
+
+h1{
+    text-align: center;
+}
+nav{ /*no moving when flexing*/
+    padding-right: 0;
+    width: 15%;
+    margin: 0;
+    z-index: 9999; /*this will make sure it is ALWAYS on top*/
+    text-align: left;
+    background-color: darkslateblue;
+    max-width: 15%;
+    height: 100%;
+    min-height: 100%;
+}
+nav,li,ul{
+    text-decoration: none;
+}
+
+
+/* classes */
+.main{
+    background-color:#F5F5F5;
+    float: right;
+    width: 85%;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/* ID's */
+
+
+/* global variable */
+*{
+    box-sizing: border-box;
+}
