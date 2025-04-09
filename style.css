@@ -1,18 +1,22 @@
 /* Style Tags */
-
+html{
+    background-color: black;
+}
 h1{
     text-align: center;
 }
 nav{ /*no moving when flexing*/
     padding-right: 0;
-    width: 15%;
+    width: 13%;
     margin: 0;
-    z-index: 9999; /*this will make sure it is ALWAYS on top*/
     text-align: left;
-    background-color: darkslateblue;
-    max-width: 15%;
-    height: 100%;
+    background-color: black;
+    max-width: 13%;
+    height: 100vh;
     min-height: 100%;
+    border-style: solid;
+    border-color: darkviolet;
+    float: left;
 }
 nav,li,ul{
     text-decoration: none;
@@ -21,17 +25,35 @@ nav,li,ul{
 
 /* classes */
 .main{
-    background-color:#F5F5F5;
+    background-color:black;
     float: right;
-    width: 85%;
+    width: 87%;
     height: 100%;
     min-height: 100%;
+    border-style: solid;
+    border-color: violet;
 }
+.image{
+    float: left;
+    max-width: 50%;
 
+}
+.caption{
+    float: right;
+    max-width: 50%;
+    color: violet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
 
 /* ID's */
 
-
+#my-game {
+    width: 500px;
+    height: 300x;
+    border: 1px solid black;
+    align-items: center;
+}
 /* global variable */
 *{
     box-sizing: border-box;
