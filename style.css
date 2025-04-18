@@ -4,6 +4,7 @@ html{
 }
 h1{
     text-align: center;
+    color: white;
 }
 nav{ /*no moving when flexing*/
     padding-right: 0;
@@ -17,6 +18,7 @@ nav{ /*no moving when flexing*/
     border-style: solid;
     border-color: darkviolet;
     float: left;
+    color: white;
 }
 nav,li,ul{
     text-decoration: none;
@@ -32,6 +34,7 @@ nav,li,ul{
     min-height: 100%;
     border-style: solid;
     border-color: violet;
+    color: white;
 }
 .image{
     float: left;
@@ -49,10 +52,13 @@ nav,li,ul{
 /* ID's */
 
 #my-game {
-    width: 500px;
-    height: 300x;
+    width: 80%;
+    height: 40%;
     border: 1px solid black;
     align-items: center;
+    margin-left: 25%;
+    margin-right: 50%;
+    text-align: center;
 }
 /* global variable */
 *{

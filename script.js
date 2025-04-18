@@ -72,13 +72,13 @@ function checkForMatch() {
   if (hello1.frame == hello2.frame && hello2.frame == hello3.frame) {
     match3Sound.play();
     matchTxt.text = '3 of a kind! +$100'
-    score -= 100;
+    score += 100;
     game.stage.backgroundColor = '#00FF00';
   }
   else if (hello1.frame == hello2.frame || hello2.frame == hello3.frame || hello1.frame == hello3.frame) {
     match2Sound.play();
     matchTxt.text = '2 of a kind! +$25'
-    score -= 25;
+    score += 25;
     game.stage.backgroundColor = '#FFFF00';
   }
   else{
