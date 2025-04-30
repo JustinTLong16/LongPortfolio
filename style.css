@@ -2,9 +2,17 @@
 html{
     background-color: black;
 }
-h1{
+h1,h2{
     text-align: center;
-    color: white;
+    color: violet;
+}
+h1, p{
+    color: violet;
+}
+p{
+    width: 90%;
+    margin-left: 2em;
+
 }
 nav{ /*no moving when flexing*/
     padding-right: 0;
@@ -13,7 +21,7 @@ nav{ /*no moving when flexing*/
     text-align: left;
     background-color: black;
     max-width: 13%;
-    height: 100vh;
+    height: 120vh;
     min-height: 100%;
     border-style: solid;
     border-color: darkviolet;
@@ -33,6 +41,16 @@ table{
     width: 100%;
 }
 
+form{
+    margin-left:30%;
+    margin-right: 30%;
+    text-align: center;
+    border:violet;
+    color: violet;
+}
+fieldset{
+    border:1px solid violet;
+}
 /* classes */
 .main{
     background-color:black;
@@ -42,13 +60,19 @@ table{
     min-height: 100%;
     border-style: solid;
     border-color: violet;
+    border-left:0;
     color: white;
 }
 .image{
-    float: left;
     max-width: 50%;
-    width: 50%;
-
+    width: 40%;
+    height: 40%;
+    margin-left:30%;
+    margin-right: 30%;
+    border:5px solid violet;
+    border-radius: 5%;
+    background-image: url(https://thumbs.dreamstime.com/b/purple-motion-blurred-shaded-background-wallpaper-vivid-color-vector-illustration-many-uses-advertising-book-page-paintings-126334102.jpg);
+    background-size:contain;
 }
 .center {
     display: flex;
@@ -58,14 +82,20 @@ table{
     border: 3px solid green;
   }
   .divider {
-    border-bottom: 1px solid violet;
-    margin: 2px 0;
+    border-bottom: 6px solid violet;
+    margin: 50px 0;
   }
   .onehalf{
-    float: left;
+    display: flex;
+    justify-content: flex-end;
     padding-left: 2em;
     padding-right: 2em;
     width: 50%;
+    max-width: 40%;
+}
+.center-text{
+    text-align: center;
+    margin-left: 4.5%;
 }
 /* ID's */
 
