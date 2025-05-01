@@ -3,8 +3,6 @@
       <li>At least one in-line styling</li>
       <li>At least one embedded styling</li>
       </ul>
-    <li>Consistent "look and feel" throughout the site (logo, color scheme, layout, navigation)</li>
-    <li>Use at least three images in addition to a logo (images should have alternate text)</li>
     <li>Mobile friendly and/or fluid layout for different screen sizes (only full screen and mobile req)</li>
     <li>HTML and CSS passes validation test at W3Schools
       <ul>
