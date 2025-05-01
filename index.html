@@ -7,6 +7,7 @@
         <meta name="description" content="a Portfolio Website for Justn Long">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     </head>
     <nav>
         <ul>
@@ -60,26 +61,37 @@
         <h2>My Future Plans!</h2>
         <p>I have many routes i am looking down, ive looked at a couple colleges, and even a couple businesses. I could do what my dad does and just do independant mechanical
             inspections, but id much rather do something related to computer science and coding, because this is what i have the most fun doing. If i do go to college it would 
-            probably be UCA or USI, and im shooting to raise my grades to the point that if i do decide i wanna go, i can but im not limiting myself to just that. At this point 
-            im kinda just exploring around and testing all my options, seeing what i do and dont like, ive looked into some computer science jobs but not nearly enough to include
-            much of note here.
+            probably be UCA (University of Central Arkansas) or USI (University of Southern Indiana), and im shooting to raise my grades to the point that if i do decide i wanna
+            go, i can but im not limiting myself to just that. At this point im kinda just exploring around and testing all my options, seeing what i do and dont like, ive 
+            looked into some computer science jobs but not nearly enough to include much of note here.
         </p>
     <div>
         <h2>My Form!</h2>
         <p class="center-text">Hey! if your new here, then take this quick form!</p>
-        <form action="" autocomplete="on" >
-            <fieldset>
-            <legend>Basic Form cause Bander told me i had to!</legend>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="date">Date:</label><br>
-            <input type="date" id="date" name="date">
-            <br><br>
-            <input type="submit" value="Submit">
-            </fieldset>
-        </form>
+        <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <button type="submit">Submit</button>
+          </form>
+          <div id="output" class="output"></div>
+            <script> // no, i did not write this, papa gpt did! but i understand sorta what the code is doing thanks in large parts to the comments, but ya know, win/win?
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                  event.preventDefault(); // Stop form from submitting normally
+            
+                  const name = document.getElementById('name').value;
+                  const email = document.getElementById('email').value;
+            
+                  // Show the submitted data on the page
+                  document.getElementById('output').innerText = `Hello, ${name}! We have received your email: ${email}`;
+            
+                  // You could also log it
+                  console.log({ name, email });
+                });
+              </script>
     </div>
     </main>
     </body>
