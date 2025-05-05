@@ -2,6 +2,7 @@
     /* Style Tags */
     html{
         background-color: black;
+        height: fit-content;
     }
     h1,h2{
         text-align: center;
