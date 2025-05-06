@@ -2,7 +2,6 @@
     /* Style Tags */
     html{
         background-color: black;
-        height: fit-content;
     }
     h1,h2{
         text-align: center;
@@ -16,28 +15,34 @@
         margin-left: 2em;
 
     }
-    nav{
-        display: flex;
-        padding-right: 0;
-        width: 13%;
-        margin: 0;
-        text-align: left;
-        background-color: black;
-        max-width: 13%;
-        height: 145vh;
-        min-height: 100%;
-        border-style: solid;
-        border-color: darkviolet;
-        float: left;
-        color: white;
-        background-image: url(https://i.pinimg.com/736x/ab/78/4f/ab784f8b687a358ed5971b37df66b0e6.jpg);
-    }
-    nav a:link{color:violet}
-    nav a:visited{color:violet}
-    nav a:hover{color: violet;border:3px inset purple;}
-    nav,li,ul{
+    #navbar {
+        position: fixed;
+        min-width: 100px;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgba(234, 0, 255, 0.4)
+      }
+      #navbar a{
+        color: violet;
+        display: block;
+        padding:20px 30px;
         text-decoration: none;
+        cursor: pointer;
+        border-top:2px solid rgba(234, 0, 255, 0.4);
     }
+    #navbar li{
+        list-style: none;
+        position: relative;
+        width: 100%;
+      }
+      #navbar ul {
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
     table, th, td,tr {
         border: 1px solid;
         text-align: center;
@@ -60,20 +65,18 @@
     }
     /* classes */
     .main{
-        background-color:black;
-        float: right;
-        width: 87%;
-        height: 100%;
-        min-height: 100%;
-        border-style: solid;
-        border-color: violet;
-        color: white;
-        height: 145vh;
+        position: absolute;
+        margin-left: 190px;
+        padding: 20px;
+        padding-top:0px;
+        margin-bottom: 110px;
+        height: fit-content;
+        border:1px solid violet;
     }
     .image{
         max-width: 50%;
         width: 40%;
-        height: 40%;
+        height: 80%;
         margin-left:30%;
         margin-right: 30%;
         border:5px solid violet;
@@ -112,19 +115,20 @@
     /* ID's */
 
     #my-game {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        top: 250px;
+        left: 250;
+        right: 500;
         align-items: center;
-        margin-left: 25%;
-        margin-right: 100%;
         text-align: center;
+        border:1px solid violet;
     }
     /* global variable */
     *{
         box-sizing: border-box;
     }
 }
-@media(max-width:1024px) and (min-width:600px){
+@media(max-width:800px) and (min-width:600px){
         /* Style Tags */
         html{
             background-color: black;
@@ -163,6 +167,12 @@
         nav,li,ul{
             text-decoration: none;
         }
+        nav ul{
+            display: block;
+            list-style: none;
+            margin-left: 0%;
+            
+        }
         table, th, td,tr {
             border: 1px solid;
             text-align: center;
@@ -185,21 +195,17 @@
         }
         /* classes */
         .main{
-            background-color:black;
-            float: right;
-            width: 87%;
-            height: 100%;
-            min-height: 100%;
-            border-style: solid;
-            border-color: violet;
-            color: white;
-            height: 145vh;
+            position: absolute;
+            margin-left: 140px;
+            padding: 20px;
+            margin-bottom: 110px;
+            height: fit-content;
         }
         .image{
             max-width: 50%;
-            width: 40%;
-            height: 40%;
-            margin-left:30%;
+            width: 50%;
+            height: 12%;
+            margin-left:25%;
             margin-right: 30%;
             border:5px solid violet;
             border-radius: 5%;
@@ -241,135 +247,6 @@
             height: 100%;
             align-items: center;
             margin-left: 16%;
-            margin-right: 100%;
-            text-align: center;
-        }
-        /* global variable */
-        *{
-            box-sizing: border-box;
-        }
-}
-@media(max-width:600px){
-        /* Style Tags */
-        html{
-            background-color: black;
-        }
-        h1,h2{
-            text-align: center;
-            color: violet;
-        }
-        h1, p{
-            color: violet;
-        }
-        p{
-            width: 90%;
-            margin-left: 2em;
-    
-        }
-        nav{
-            display: flex;
-            padding-right: 0;
-            width: 20%;
-            margin: 0;
-            text-align: left;
-            background-color: black;
-            max-width: 13%;
-            height: 150vh;
-            min-height: 100%;
-            border-style: solid;
-            border-color: darkviolet;
-            float: left;
-            color: white;
-            background-image: url(https://i.pinimg.com/736x/ab/78/4f/ab784f8b687a358ed5971b37df66b0e6.jpg);
-        }
-        nav a:link{color:violet}
-        nav a:visited{color:violet}
-        nav a:hover{color: violet;border:3px inset purple;}
-        nav,li,ul{
-            text-decoration: none;
-            list-style: none;
-            text-align: left;
-            margin-right: 10;
-            margin-left: 0%;
-        }
-        table, th, td,tr {
-            border: 1px solid;
-            text-align: center;
-            color: violet;
-            border-color: violet;
-        }
-        table{
-            width: 100%;
-        }
-    
-        form{
-            margin-left:30%;
-            margin-right: 30%;
-            text-align: center;
-            border:violet;
-            color: violet;
-        }
-        fieldset{
-            border:1px solid violet;
-        }
-        /* classes */
-        .main{
-            background-color:black;
-            float: right;
-            width: 87%;
-            height: 100%;
-            min-height: 100%;
-            border-style: solid;
-            border-color: violet;
-            color: white;
-            height: 150vh;
-        }
-        .image{
-            max-width: 50%;
-            width: 60%;
-            height: 60%;
-            margin-left:30%;
-            margin-right: 30%;
-            border:5px solid violet;
-            border-radius: 5%;
-            background-image: url(https://thumbs.dreamstime.com/b/purple-motion-blurred-shaded-background-wallpaper-vivid-color-vector-illustration-many-uses-advertising-book-page-paintings-126334102.jpg);
-            background-size:contain;
-        }
-        .center {
-            display: flex;
-            position: absolute;
-            top: 50%;
-            left: -10%;
-        }
-        .divider {
-            border-bottom: 6px solid violet;
-            margin: 50px 0;
-        }
-        .onehalf{
-            display: flex;
-            justify-content: flex-end;
-            padding-left: 2em;
-            padding-right: 2em;
-            width: 50%;
-            max-width: 40%;
-        }
-        .center-text{
-            text-align: center;
-            margin-left: 4.5%;
-        }
-        .output {
-            margin-top: 20px;
-            text-align: center;
-            color: violet;
-            font-weight: bold;
-        }
-        /* ID's */
-    
-        #my-game {
-            width: 10%;
-            height: 10%;
-            align-items: center;
-            margin-left: 25%;
             margin-right: 100%;
             text-align: center;
         }
