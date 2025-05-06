@@ -18,43 +18,47 @@
     </nav>
     <body>
         <main class="main">
-<div>
          <h1>Long Portfolio</h1>
          <div class="divider"></div>
+<<<<<<< HEAD
          <img src="assets/Justin.jpg" ALT="Image of Justin Long!" class="image"> 
          <p>I am Justin Long, the man who developed this website. I began coding when i was young with block coding on my ipad thanks to some app, i built one thing on there and that
+=======
+         <img src="assets/Justin.jpg"ALT="Image of Justin Long!" class="image"> 
+            <p>I am Justin Long, the man who developed this website. I began coding when i was young with block coding on my ipad thanks to some app, i built one thing on there and that
+>>>>>>> a2be82f9876daaeb644c9545462a65110441910c
             was a cookie clicker app that they had a tutorial on. I would get back into coding come sophmore year when i took the Computer Science course at new tech and we wouldnt do much more
             than basic block coding and some python. The next year i applied and got accepted into the SICTC Computer Science and Software Development course where i would learn much more in depth
             Python scripts, as well as learning intermediate HTML/CSS and some Javascript as well. Im also in my opinion a pretty good editor, mainly ive made stuff for school projects.
              To Continue exploring, use the nav bar off to the side!
-         </p>
-</div>
-<br>
-        <div class="divider"></div>
-        <br>
-        <div>
-        <table>
-            <tr>
-                <th><strong>Language</strong></th>
-                <th><strong>Expierence</strong></th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>intermediate</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>intermediate</td>
-            </tr>
-            <tr>
-                <td>Javascript</td>
-                <td>beginner</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>beginner</td>
-            </tr>
+            </p>
+            <br>
+            <div class="divider"></div>
+            <br>
+            <div>
+                <table>
+                <tr>
+                    <th><strong>Language</strong></th>
+                    <th><strong>Expierence</strong></th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>beginner</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>beginner</td>
+                    </tr>
             
+<<<<<<< HEAD
         </table>
         </div>
         <div class="divider"></div>
@@ -83,10 +87,31 @@
             <script> // no, i did not write this, papa gpt did! but i understand sorta what the code is doing thanks in large parts to the comments, but ya know, win/win?
                 document.getElementById('contactForm').addEventListener('submit', function(event) {
                   event.preventDefault(); // Stop form from submitting normally
+=======
+                </table>
+            </div>
+            <div class="divider"></div>
+            <div>
+            <h2>My Future Plans!</h2>
+            <p>I have many routes i am looking down, ive looked at a couple colleges, and even a couple businesses. I could do what my dad does and just do independant mechanical
+                inspections, but id much rather do something related to computer science and coding, because this is what i have the most fun doing. If i do go to college it would 
+                probably be UCA (University of Central Arkansas) or USI (University of Southern Indiana), and im shooting to raise my grades to the point that if i do decide i wanna
+                go, i can but im not limiting myself to just that. At this point im kinda just exploring around and testing all my options, seeing what i do and dont like, ive 
+                looked into some computer science jobs but not nearly enough to include much of note here.
+            </p>
+            </div>
+            <div>
+            <h2>My Form!</h2>
+            <p class="center-text">Hey! if your new here, then take this quick form!</p>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+>>>>>>> a2be82f9876daaeb644c9545462a65110441910c
             
-                  const name = document.getElementById('name').value;
-                  const email = document.getElementById('email').value;
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
             
+<<<<<<< HEAD
                   // Show the submitted data on the page
                   document.getElementById('output').innerText = `Hello, ${name}! We have received your email: ${email}`;
             
@@ -95,6 +120,26 @@
                 });
               </script>
         </div>
+=======
+                <button type="submit">Submit</button>
+            </form>
+            <div id="output" class="output"></div>
+                    <script> // no, i did not write this, papa gpt did! but i understand sorta what the code is doing thanks in large parts to the comments, but ya know, win/win?
+                        document.getElementById('contactForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Stop form from submitting normally
+                    
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                    
+                        // Show the submitted data on the page
+                        document.getElementById('output').innerText = `Hello, ${name}! We have received your email: ${email}`;
+                    
+                        // You could also log it
+                        console.log({ name, email });
+                        });
+                    </script>
+            </div>
+>>>>>>> a2be82f9876daaeb644c9545462a65110441910c
         </main>
     </body>
 </html>
