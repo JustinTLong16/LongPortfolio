@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Long Portfolio Home</title>
+        <meta name="description" content="a Portfolio Website for Justn Long">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+    </head>
+        <nav style="height: 100vh;">
+            <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="programlist.html">Program</a></li>
+            <li><a href="links.html">Links</a></li>
+            </ul>
+        </nav>
+    <body>
+        <main class="main" style="height: 100vh;">
+        <img src="https://th.bing.com/th/id/R.4682346bc397ac677aed2a5f52d15511?rik=WMaAt7994m5nvw&pid=ImgRaw&r=0" alt="GameScreen" id="img">
+        <div id="game">
+        <div id="stats">
+            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+            <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+            <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+        </div>
+        <div id="controls">
+            <button id="button1">Go to store</button>
+            <button id="button2">Go to cave</button>
+            <button id="button3">Fight dragon</button>
+        </div>
+        <div id="monsterStats">
+            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+        </div>
+        <div id="text">
+            Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+        </div>
+        </div>
+        <script src="scripts/RPG.js"></script>
+        </main>
+    </body>
+</html>

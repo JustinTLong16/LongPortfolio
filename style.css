@@ -52,6 +52,13 @@ form{
 fieldset{
     border:1px solid violet;
 }
+button {
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #f700ff;
+  background-image: linear-gradient(#f700ff, #700067);
+  border: 3px solid #700067;
+}
 /* classes */
 .main{
     background-color:black;
@@ -103,6 +110,9 @@ fieldset{
     color: violet;
     font-weight: bold;
   }
+.stat {
+  padding-right: 10px;
+}
 /* ID's */
 
 #my-game {
@@ -113,6 +123,52 @@ fieldset{
     margin-right: 100%;
     text-align: center;
 }
+#text {
+  background-color: black;
+  color: violet;
+  padding: 10px;
+  border: 1px solid violet;
+}
+
+#game {
+  display: block;
+  max-width: 1000px;
+  max-height: 800px;
+  background-color: #353535;
+  color: violet;
+  margin: 30px auto 0px;
+  padding: 0px;
+  border: 3px solid violet;
+}
+#img{
+  display: block;
+  max-width: 600px;
+  max-height: 500px;  
+  margin: 30px auto 0px;
+  padding:0px;
+  border: 1px solid violet;
+}
+#controls,
+#stats {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border: 1px solid violet;
+  padding: 5px;
+  color: violet;
+}
+
+#monsterStats {
+  display: none;
+  border: 1px solid violet;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #c70d0d;
+}
+
+
+
+
 /* global variable */
 *{
     box-sizing: border-box;
