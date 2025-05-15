@@ -1,138 +1,147 @@
-@media(min-width:1024px){
-    /* Style Tags */
-    html{
-        background-color: black;
-    }
-    h1,h2{
-        text-align: center;
-        color: violet;
-    }
-    h1, p{
-        color: violet;
-    }
-    p{
-        width: 90%;
-        margin-left: 2em;
 
-    }
-    #navbar {
-        position: fixed;
-        min-width: 100px;
-        top: 0px;
-        left: 0px;
-        width: 200px;
-        height: 100%;
-        border-right: solid;
-        border-color: rgba(234, 0, 255, 0.4)
-      }
-      #navbar a{
-        color: violet;
-        display: block;
-        padding:20px 30px;
-        text-decoration: none;
-        cursor: pointer;
-        border-top:2px solid rgba(234, 0, 255, 0.4);
-    }
-    #navbar li{
-        list-style: none;
-        position: relative;
-        width: 100%;
-      }
-      #navbar ul {
-        padding: 0;
-        overflow-y: auto;
-        overflow-x: hidden;
-      }
-    table, th, td,tr {
-        border: 1px solid;
-        text-align: center;
-        color: violet;
-        border-color: violet;
-    }
-    table{
-        width: 100%;
-    }
+/* Style Tags */
+html{
+  background-color: black;
+}
+h1,h2{
+  text-align: center;
+  color: violet;
+}
+h1, p{
+  color: violet;
+}
+p{
+  width: 90%;
+  margin-left: 2em
+}
+table, th, td,tr {
+  border: 1px solid;
+  text-align: center;
+  color: violet;
+  border-color: violet;
+}
+table{
+  width: 100%;
+}
 
 form{
-    margin-left:30%;
-    margin-right: 30%;
-    text-align: center;
-    border:violet;
-    color: violet;
+  margin-left:30%;
+  margin-right: 30%;
+  text-align: center;
+  border:violet;
+  color: violet;
 }
 fieldset{
-    border:1px solid violet;
+  border:1px solid violet;
 }
 button {
-  cursor: pointer;
-  color: #0a0a23;
-  background-color: #f700ff;
-  background-image: linear-gradient(#f700ff, #700067);
-  border: 3px solid #700067;
+cursor: pointer;
+color: #0a0a23;
+background-color: #f700ff;
+background-image: linear-gradient(#f700ff, #700067);
+border: 3px solid #700067;
 }
 /* classes */
 .main{
-    background-color:black;
-    float: right;
-    width: 87%;
-    height: 100%;
-    min-height: 100%;
-    border-style: solid;
-    border-color: violet;
-    border-left:0;
-    color: white;
+  background-color:black;
+  float: right;
+  width: 89.6%;
+  height: 100%;
+  min-height: 100%;
+  border-style: solid;
+  border-color: violet;
+  border-left:0;
+  color: white;
+  overflow: hidden;
 }
 .image{
-    max-width: 50%;
-    width: 40%;
-    height: 40%;
-    margin-left:30%;
-    margin-right: 30%;
-    border:5px solid violet;
-    border-radius: 5%;
-    background-image: url(https://thumbs.dreamstime.com/b/purple-motion-blurred-shaded-background-wallpaper-vivid-color-vector-illustration-many-uses-advertising-book-page-paintings-126334102.jpg);
-    background-size:contain;
+  max-width: 50%;
+  width: 40%;
+  height: 40%;
+  margin-left:30%;
+  margin-right: 30%;
+  border:5px solid violet;
+  border-radius: 5%;
+  background-image: url(https://thumbs.dreamstime.com/b/purple-motion-blurred-shaded-background-wallpaper-vivid-color-vector-illustration-many-uses-advertising-book-page-paintings-126334102.jpg);
+  background-size:contain;
 }
 .center {
-    display: flex;
-    position: absolute;
-    top: 5%;
-    left: 10%;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 10%;
   }
   .divider {
-    border-bottom: 6px solid violet;
-    margin: 50px 0;
+  border-bottom: 6px solid violet;
+  margin: 50px 0;
   }
   .onehalf{
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 2em;
-    padding-right: 2em;
-    width: 50%;
-    max-width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 50%;
+  max-width: 40%;
 }
 .center-text{
-    text-align: center;
-    margin-left: 4.5%;
+  text-align: center;
+  margin-left: 4.5%;
 }
 .output {
-    margin-top: 20px;
-    text-align: center;
-    color: violet;
-    font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  color: violet;
+  font-weight: bold;
   }
 .stat {
   padding-right: 10px;
 }
+.programlist{
+  font-size: 1.5em;
+  text-align: center; 
+  list-style: none;
+}
+.programlist a{
+  text-decoration: none;
+  cursor: pointer;
+}
 /* ID's */
-
+#navbar {
+  position: fixed;
+  min-width: 100px;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(234, 0, 255, 0.4);
+  z-index: 999;
+}
+  #navbar a{
+  color: violet;
+  display: block;
+  padding:20px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  border-top:2px solid rgba(234, 0, 255, 0.4);
+}
+#navbar li{
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 #my-game {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    margin-left: 25%;
-    margin-right: 100%;
-    text-align: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 100%;
+  text-align: center;
 }
 #text {
   background-color: black;
@@ -176,10 +185,6 @@ button {
   color: #ffffff;
   background-color: #c70d0d;
 }
-
-
-
-
 /* global variable */
 *{
     box-sizing: border-box;
