@@ -1,46 +1,57 @@
-/* Style Tags */
-html{
-    background-color: black;
-}
-h1,h2{
-    text-align: center;
-    color: violet;
-}
-h1, p{
-    color: violet;
-}
-p{
-    width: 90%;
-    margin-left: 2em;
+@media(min-width:1024px){
+    /* Style Tags */
+    html{
+        background-color: black;
+    }
+    h1,h2{
+        text-align: center;
+        color: violet;
+    }
+    h1, p{
+        color: violet;
+    }
+    p{
+        width: 90%;
+        margin-left: 2em;
 
-}
-nav{ /*no moving when flexing*/
-    padding-right: 0;
-    width: 13%;
-    margin: 0;
-    text-align: left;
-    background-color: black;
-    max-width: 13%;
-    height: 134.6vh;
-    min-height: 100%;
-    border-style: solid;
-    border-color: darkviolet;
-    float: left;
-    color: white;
-    background-image: url(https://i.pinimg.com/736x/ab/78/4f/ab784f8b687a358ed5971b37df66b0e6.jpg);
-}
-nav,li,ul{
-    text-decoration: none;
-}
-table, th, td,tr {
-    border: 1px solid;
-    text-align: center;
-    color: violet;
-    border-color: violet;
-  }
-table{
-    width: 100%;
-}
+    }
+    #navbar {
+        position: fixed;
+        min-width: 100px;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgba(234, 0, 255, 0.4)
+      }
+      #navbar a{
+        color: violet;
+        display: block;
+        padding:20px 30px;
+        text-decoration: none;
+        cursor: pointer;
+        border-top:2px solid rgba(234, 0, 255, 0.4);
+    }
+    #navbar li{
+        list-style: none;
+        position: relative;
+        width: 100%;
+      }
+      #navbar ul {
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    table, th, td,tr {
+        border: 1px solid;
+        text-align: center;
+        color: violet;
+        border-color: violet;
+    }
+    table{
+        width: 100%;
+    }
 
 form{
     margin-left:30%;
