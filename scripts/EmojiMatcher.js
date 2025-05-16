@@ -1,5 +1,5 @@
 // create Phaser.Game object assigned to global variable named game
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'my-game', { preload: preload, create: create, update: update });
+var game = new Phaser.Game(600, 400, Phaser.AUTO, 'my-game', { preload: preload, create: create, update: update });
 
 // declare other global variables (for sprites, etc.)
 //hello1 = object

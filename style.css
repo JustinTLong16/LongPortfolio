@@ -49,7 +49,6 @@ border: 3px solid #700067;
   min-height: 100%;
   border-left: 0;
   color: white;
-  overflow: hidden;
 }
 .image{
   max-width: 50%;
@@ -102,6 +101,14 @@ border: 3px solid #700067;
   text-decoration: none;
   cursor: pointer;
 }
+.link{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 90%;
+  align-items: center;
+  padding-bottom: 5%;
+}
 /* ID's */
 #navbar {
   position: fixed;
@@ -132,14 +139,18 @@ border: 3px solid #700067;
   overflow-y: auto;
   overflow-x: hidden;
 }
+/* This is styling for emoji matcher project */
 #my-game {
+  display: block;
   width: 100%;
   height: 100%;
-  align-items: center;
   margin-left: 25%;
-  margin-right: 100%;
+  margin-right: 25%;
+  margin-top: 5%;
   text-align: center;
 }
+/* end of emoji matcher */
+/* this is code for the RPG */
 #text {
   background-color: black;
   color: violet;
@@ -182,6 +193,7 @@ border: 3px solid #700067;
   color: #ffffff;
   background-color: #c70d0d;
 }
+/* end of RPG styling code. */
 /* global variable */
 *{
     box-sizing: border-box;
