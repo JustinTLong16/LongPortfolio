@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onkeydown="keyGame(event)">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,12 @@
         </ul>
     </nav>
     <body>
-        <main class="main" style="height: 100vh;">
-            <h1>These are a couple of my projects!</h1>
-            <ul class="programlist">
-            <li><a href="Program.html">Emoji Matcher! (Not gambling)</a></li>
-            <li><a href="RPG.html">RPG App</a></li>
-            <li><a href="keyboard.html">keyboard game</a></li>
-            </ul>
-        </main>
+    <main class="main" style="height:100vh;">
+    <h1>Keyboard Game!</h1>
+    <p style="text-align: center; margin-left:80px;">Press the key displayed:</p>
+    <h2 id="keyToPress"></h2>
+    <h2 id="output"></h2>
+        <script src="scripts/keyboard.js"></script>
+    </main>
     </body>
 </html>
