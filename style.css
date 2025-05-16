@@ -42,15 +42,12 @@ background-image: linear-gradient(#f700ff, #700067);
 border: 3px solid #700067;
 }
 /* classes */
-.main{
-  background-color:black;
-  float: right;
-  width: 89.6%;
-  height: 100%;
+.main {
+  background-color: black;
+  margin-left: 200px; /* Equal to #navbar width */
+  width: calc(100% - 200px); /* Prevent overflow */
   min-height: 100%;
-  border-style: solid;
-  border-color: violet;
-  border-left:0;
+  border-left: 0;
   color: white;
   overflow: hidden;
 }

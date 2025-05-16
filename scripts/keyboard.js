@@ -29,7 +29,7 @@ function keyGame (event) {
         correctKeys++;
         numberOfKeys++;
         console.log(currentKey);
-        output.innerHTML = (`You got it right! Accuracy: ${accuracy}%u`);
+        output.innerHTML = (`You got it right! Accuracy: ${accuracy}%`);
 } else { 
     numberOfKeys++
     output.innerHTML = (`Wrong! try again Stupid. Accuracy: ${accuracy}%`)
